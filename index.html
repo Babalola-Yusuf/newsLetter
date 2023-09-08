@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+  <script src="script.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Tomato: '#ff6257', DarkSlateGrey: 'hsl(234, 29%, 20%)',
+            CharcoalGrey: 'hsl(235, 18%, 26%)', 
+            Grey: 'hsl(231, 7%, 60%)', White: 'hsl(0, 0%, 100%)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex justify-center items-center bg-DarkSlateGrey h-screen font-sans" style="font-family: 'Roboto', sans-serif;">
+<main class="bg-white p-0 sm:p-6 flex justify-between gap-10 items-center sm:rounded-3xl flex-col-reverse sm:flex-row">
+    <div class=" w-80 ml-4 flex flex-col">
+      <h1 class="text-5xl font-bold ">Stay updated!</h1>
+      <p class="text-base mt-6 ">Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <div class="flex mt-6 items-start">
+        <img src="./assets/images/icon-list.svg" alt=""srcset="">
+        <p class="text-base ml-4 mt-0">Product discovery and building what matters</p>
+      </div>
+      <div class="flex mt-2 items-start">
+        <img src="./assets/images/icon-list.svg" alt=""srcset="">
+        <p class="text-base ml-4">Measuring to ensure updates are a success</p>
+      </div>
+      <div class="flex mt-2 items-start">
+        <img src="./assets/images/icon-list.svg" alt="" >
+        <p class="text-base ml-4 ">And much more!</p>
+      </div>
+      <!-- Sign-up form start -->
+      
+      <div class="flex mt-8 justify-between">
+        <label for="email" class="font-bold block text-sm">Email address</label>
+        <label for="email" class="font-bold block text-sm text-Tomato" id="error">Error</label>
+      </div>
+      
+      <input type="text" id="email" placeholder="email@company.com" class="p-6 border border-grey h-8 mt-2 w-full text-base rounded-lg hover:border-Grey hover:delay-75">
+      <button class="bg-DarkSlateGrey text-white p-6 font-bold flex items-center justify-center border border-DarkSlateGray h-8 mt-6 mb-8 w-full text-base rounded-lg hover:bg-Tomato grow hover:delay-75">Subscribe to monthly newsletter</button>
+      <!-- Sign-up form end -->
+    </div>
+    <img src="./assets/images/illustration-sign-up-mobile.svg" class=" md:hidden">
+    <img src="./assets/images/illustration-sign-up-desktop.svg" class="w-72 hidden md:flex">
+</main>
+  <!-- Success message start -->
+<section class=" p-4 sm:p-14 w-96 sm:w-3/4 md:w-1/2 lg:w-2/5 sm:rounded-3xl bg-white hidden">
+  <div class="mt-36 sm:mt-0 box-border flex flex-col items-start">
+        <img src="./assets/images/icon-success.svg" alt="" class="">
+        <h1 class="text-4xl md:text-5xl font-bold mt-8 ">Thanks for subscribing!</h1>
+        <p class="mt-8">
+          A confirmation email has been sent to <span id="displayEmail" class="font-bold">ash@loremcompany.com</span>. 
+          Please open it and click the button inside to confirm your subscription.
+        </p>  
+        <button class="bg-DarkSlateGrey text-white p-6 font-bold flex items-center justify-center border border-DarkSlateGray mt-60 sm:mt-10 h-8 w-full text-base rounded-lg hover:bg-Tomato grow hover:delay-75 " >Dismiss message</button>
+    </div>
+      
+</section>
+
+  
+
+  <!-- Stay updated!
+
+  Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter
+ -->
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message
+ -->
+  <!-- Success message end -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
