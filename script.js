@@ -1,7 +1,7 @@
-const form = document.querySelector("form");
+const form = document.querySelector("button");
 const email = document.getElementById("email");
 const error = document.getElementById('error');
-const button = document.querySelector('button');
+
 
 // As per the HTML Specification
 const emailRegExp =
@@ -23,9 +23,11 @@ email.addEventListener("input", () => {
   if (isValid) {
     email.className = "valid";
     error.textContent = "";
-    error.className = "error";
+    error.classList.remove("error");
   } else {
-    email.className = "invalid";
+    email.classList = "invalid";
+    error.classList.add("error");
+    error.textContent = "Error";
   }
 });
 
