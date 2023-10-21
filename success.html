@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
   
   <script>
     tailwind.config = {
@@ -31,6 +34,8 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    
   </style>
 </head>
 <body class="flex justify-center items-center bg-DarkSlateGrey h-screen font-sans" style="font-family: 'Roboto', sans-serif;">
@@ -60,6 +65,14 @@ displayEmail.textContent = retrievedEmail;
 succesBtn.addEventListener('click', ()=>{
   window.location.href = 'index.html'
 })
+
+anime({
+  targets: '#success-message',
+  translateY: 10,
+  direction: 'alternate',
+  loop: true,
+  easing: 'linear'
+});
 
 </script>
   
