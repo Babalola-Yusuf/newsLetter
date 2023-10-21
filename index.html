@@ -34,51 +34,45 @@
   </style>
 </head>
 <body class="flex justify-center items-center bg-DarkSlateGrey h-screen font-sans" style="font-family: 'Roboto', sans-serif;">
-<main class="bg-white p-0 sm:p-6 flex justify-between gap-10 items-center sm:rounded-3xl flex-col-reverse sm:flex-row">
+<main class="bg-white p-0 sm:p-6 flex justify-between gap-10 items-center sm:rounded-3xl flex-col-reverse sm:flex-row ">
     <div class=" w-80 ml-4 flex flex-col">
-      <h1 class="text-5xl font-bold ">Stay updated!</h1>
-      <p class="text-base mt-6 ">Join 60,000+ product managers receiving monthly updates on:
-      </p>
-      <div class="flex mt-6 items-start">
-        <img src="./assets/images/icon-list.svg" alt=""srcset="">
-        <p class="text-base ml-4 mt-0">Product discovery and building what matters</p>
+      <div class="w-full">
+        <h1 class="text-5xl font-bold">Stay updated!</h1>
+        <p class="text-base mt-6">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="flex mt-6 items-start">
+          <img src="./assets/images/icon-list.svg" alt=""srcset="">
+          <p class="text-base ml-4 mt-0">Product discovery and building what matters</p>
+        </div>
+        <div class="flex mt-2 items-start">
+          <img src="./assets/images/icon-list.svg" alt=""srcset="">
+          <p class="text-base ml-4">Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex mt-2 items-start">
+          <img src="./assets/images/icon-list.svg" alt="" >
+          <p class="text-base ml-4 ">And much more!</p>
+        </div>
       </div>
-      <div class="flex mt-2 items-start">
-        <img src="./assets/images/icon-list.svg" alt=""srcset="">
-        <p class="text-base ml-4">Measuring to ensure updates are a success</p>
-      </div>
-      <div class="flex mt-2 items-start">
-        <img src="./assets/images/icon-list.svg" alt="" >
-        <p class="text-base ml-4 ">And much more!</p>
-      </div>
+      
       <!-- Sign-up form start -->
-      
-      <div class="flex mt-8 justify-between">
-        <label for="email" class="font-bold block text-sm">Email address</label>
-        <label for="email" class="font-bold block text-sm text-Tomato" id="error"></label>
-      </div>
-      
-      <input type="text" id="email" placeholder="email@company.com" class="p-6 border border-grey h-8 mt-2 w-full text-base rounded-lg hover:border-Grey hover:delay-75">
-      <button type="submit" class="bg-DarkSlateGrey text-white p-6 font-bold flex items-center justify-center border border-DarkSlateGray h-8 mt-6 mb-8 w-full text-base rounded-lg hover:bg-Tomato grow hover:delay-75">Subscribe to monthly newsletter</button>
-      <!-- Sign-up form end -->
+      <form >
+        <div class="flex mt-8 justify-between">
+          <label for="email" class="font-bold block text-sm">Email address</label>
+          <label for="email" class="font-bold block text-sm text-Tomato" id="error"></label>
+        </div>
+        
+        <input type="text" id="email" placeholder="email@company.com" class="p-6 border border-grey h-8 mt-2 w-full text-base rounded-lg hover:border-Grey hover:delay-75"> 
+        <button type="submit" class="bg-DarkSlateGrey text-white p-6 font-bold flex items-center justify-center border border-DarkSlateGray h-8 mt-6 mb-8 w-full text-base rounded-lg hover:bg-Tomato grow hover:delay-75">Subscribe to monthly newsletter</button>
+        
+      </form>
     </div>
+      <!-- Sign-up form end -->
+    
     <img src="./assets/images/illustration-sign-up-mobile.svg" class=" md:hidden">
     <img src="./assets/images/illustration-sign-up-desktop.svg" class="w-72 hidden md:flex">
 </main>
-  <!-- Success message start -->
-<section class=" p-4 sm:p-14 w-96 sm:w-3/4 md:w-1/2 lg:w-2/5 sm:rounded-3xl bg-white hidden">
-  <div class="mt-36 sm:mt-0 box-border flex flex-col items-start">
-        <img src="./assets/images/icon-success.svg" alt="" class="">
-        <h1 class="text-4xl md:text-5xl font-bold mt-8 ">Thanks for subscribing!</h1>
-        <p class="mt-8">
-          A confirmation email has been sent to <span id="displayEmail" class="font-bold">ash@loremcompany.com</span>. 
-          Please open it and click the button inside to confirm your subscription.
-        </p>  
-        <button class="bg-DarkSlateGrey text-white p-6 font-bold flex items-center justify-center border border-DarkSlateGray mt-60 sm:mt-10 h-8 w-full text-base rounded-lg hover:bg-Tomato grow hover:delay-75 " >Dismiss message</button>
-    </div>
-      
-</section>
-
+  
   
 <script src="script.js"></script>
   
